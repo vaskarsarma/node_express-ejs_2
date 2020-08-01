@@ -1,0 +1,19 @@
+<%- include('includes/head.ejs') %>
+</head>
+
+<body>
+<%- include('includes/navigation.ejs') %>
+<main>
+    <h1>Please find the list of Users</h1>
+    <% if(userlist.length > 0 ) { %>    
+    <ul>
+        <% for(let user of userlist) { %> 
+            <li><%= user.username %></li>            
+        <% } %>
+    </ul>
+    <% } else { %>
+        <p>No Data Available!!!</p>
+    <% } %>
+</main>
+</body>
+<%- include('includes/end.ejs') %>

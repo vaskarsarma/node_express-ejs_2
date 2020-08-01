@@ -1,0 +1,12 @@
+<header class="main-header">
+	<nav class="main-header__nav">
+		<ul class="main-header__item-list">
+			<li class="main-header__item">
+				<a class='<%= (locals.path && path=== "/") ? "active" : "" %>' href="/">Add User</a>
+			</li>
+			<li class="main-header__item">
+				<a class='<%= (locals.path && path=== "/users") ? "active" : "" %>' href="/users" >View Users</a>
+			</li>
+		</ul>
+	</nav>
+</header>
