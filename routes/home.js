@@ -6,6 +6,9 @@ const userlist = [];
 
 router.get('/', (req, res, next) => {
 	//console.log('home -> / ');
+
+	console.log('sddsfdfdf');
+	
 	res.render('add-users', {
 		docTitle: 'Add Users',
 		path: '/',
